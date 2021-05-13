@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -80,6 +81,7 @@ public class RegisterActivity extends AppCompatActivity {
         String password = editTextPassword.getText().toString().trim();
         if(containsName(password, name)){
             editTextPassword.setError("Password cannot contain your name");
+            return false;
         }
 
         if(!Validator.validatePassword(password)){
@@ -102,17 +104,19 @@ public class RegisterActivity extends AppCompatActivity {
     }
 
     private boolean containsName(String password, String name){
-        name = name.toLowerCase();
-        password = password.toLowerCase();
+        name = name.toLowerCase().trim();
+        password = password.toLowerCase().trim();
         String[] parts = name.split(" ");
         if(password.contains(name)){
             return false;
         }
         for(String part: parts){
+            Log.e("Names", part);
+            Log.e("Names", password);
             if(password.contains(part)){
-                return false;
+                return true;
             }
         }
-        return true;
+        return false;
     }
 }
