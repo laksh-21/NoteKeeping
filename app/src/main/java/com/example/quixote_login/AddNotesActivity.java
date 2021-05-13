@@ -56,6 +56,7 @@ public class AddNotesActivity extends AppCompatActivity {
         setContentView(R.layout.activity_add_notes);
 
         getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_ADJUST_PAN);
+        setTitle("Add a Note");
 
         floatingActionButton = findViewById(R.id.floatingActionButton);
         floatingActionButton.setOnClickListener(new View.OnClickListener() {

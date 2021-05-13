@@ -31,6 +31,8 @@ public class DetailsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_details);
 
+        setTitle("Note Details");
+
         notesDatabaseHelper = new NotesDatabaseHelper(this, getApplicationContext());
 
         viewPager = findViewById(R.id.viewPager);
