@@ -13,7 +13,7 @@ public class Validator {
     private static final String PHONE_NUMBER_PATTERN = "^(?:(?:\\+|0{0,2})91(\\s*[\\-]\\s*)?|[0]?)?[789]\\d{9}$";
     private static Pattern phonePattern = Pattern.compile(PHONE_NUMBER_PATTERN);
 
-    private static final String EMAIL_PATTERN = "^[A-Z0-9a-z._%+-]{4,25}@[A-Za-z0-9.-]+\\.[A-Za-z]{4,25}$";
+    private static final String EMAIL_PATTERN = "^[A-Z0-9a-z._%+-]{4,25}@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}$";
     private static Pattern emailPattern = Pattern.compile(EMAIL_PATTERN);
 
     public static boolean validateEmail(String email){
