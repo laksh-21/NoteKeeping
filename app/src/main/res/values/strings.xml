@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Quixote_Login</string>
+    <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In bibendum, enim vel egestas posuere, lectus tellus malesuada nisl, quis pharetra nulla arcu ac neque. In dui eros, bibendum vitae pulvinar non, ullamcorper vitae urna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam volutpat tincidunt hendrerit. Aenean lobortis et nisl vel placerat. Etiam volutpat leo est, quis interdum dolor aliquet nec. Vivamus non augue est. Praesent vel nibh vitae velit semper varius. Quisque congue massa at porta tincidunt. Cras ex leo, pharetra consequat risus at, interdum cursus augue. Nullam in ultrices lorem.
+
+Nam laoreet orci est, at facilisis sem congue eu. Nullam risus nibh, viverra sit amet pellentesque non, maximus nec nunc. Cras lacinia mollis massa non volutpat. Morbi ut. </string>
+    <string name="wrong_password_format">Password must begin with a lowercase letter, 2 Uppercase letters, 2 digits and a special character(?!.@$) is required.(8-15 characters)</string>
+    <string name="wrong_email_format">Email name and domain must be 4-25 characters long and must be separated by @</string>
+</resources>
